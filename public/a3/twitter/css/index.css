@@ -119,9 +119,14 @@ a {
     font-size: 20px;
 }
 
+.wd-title-container {
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
 .wd-handler-user {
     color: lightgray;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .wd-handler-border {
@@ -130,25 +135,33 @@ a {
 
 .wd-post-container {
     margin-top: 12px;
-    margin-left: 12px;
-    margin-bottom: 12px;
+    margin-left: 16px;
+    /*margin-bottom: 12px;*/
+}
+
+.wd-avatar-image-block {
+    display: flex;
+    width: 48px;
 }
 
 .wd-avatar-image {
-    margin-top: 12px;
     float: left;
-    width: 34px;
-    height: 34px;
-    border-radius: 48px;
-    margin-right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
-.wd-post-text {
+.wd-post {
     font-size: 15px;
     color: white;
-    width: 506px;
+    margin-left: 60px;
+    margin-bottom: 12px;
+}
+
+.wd-post-main-content {
     margin-right: 16px;
     margin-bottom: 12px;
+    max-width: 506px;
 }
 
 .wd-post-handler {
