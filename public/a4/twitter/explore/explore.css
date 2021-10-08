@@ -1,0 +1,50 @@
+.wd-margin-top {
+    margin-top: 10px;
+}
+
+.wd-fa-sm {
+    font-size: 0.5em;
+}
+
+.wd-btn-custom-xxl {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+
+.wd-btn-custom-search {
+    font-size: 20px;
+    border: none !important;
+}
+
+.wd-input-search {
+    border-radius: 30px;
+}
+
+.wd-suggested-area {
+    font-size: 12px;
+    color: gray;
+}
+
+.wd-suggested-title {
+    font-size: 12px;
+    color: black;
+}
+
+.wd-gallery-background {
+    position: relative;
+}
+
+.wd-text-pos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.wd-image-rounded {
+    border-radius: 50%;
+}
