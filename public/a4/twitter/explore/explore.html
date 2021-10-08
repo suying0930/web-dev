@@ -9,52 +9,52 @@
     <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="override-bg">
 <div class="container wd-margin-top">
     <div class="row">
 <!--        left column for XL and XXL-->
         <div class="col-xxl-2 col-xl-3 col-lg-1 col-2">
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item override-bg override-font">
                     <i class="fab fa-twitter"></i>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bg override-font">
                     <i class="fas fa-home"></i>
                     <span class="d-none d-xl-inline">Home</span>
                 </li>
-                <li class="list-group-item active">
+                <li class="list-group-item active override-bg override-font">
                     <i class="fas fa-hashtag"></i>
                     <span class="d-none d-xl-inline">Explore</span>
                 </li>
-                <li class="list-group-item">
-                    <i class="fas fa-bell"></i>
+                <li class="list-group-item override-bg override-font">
+                    <i class="far fa-bell"></i>
                     <span class="d-none d-xl-inline">Notifications</span>
                 </li>
-                <li class="list-group-item">
-                    <i class="fas fa-envelope"></i>
+                <li class="list-group-item override-bg override-font">
+                    <i class="far fa-envelope"></i>
                     <span class="d-none d-xl-inline">Messages</span>
                 </li>
-                <li class="list-group-item">
-                    <i class="fas fa-bookmark"></i>
+                <li class="list-group-item override-bg override-font">
+                    <i class="far fa-bookmark"></i>
                     <span class="d-none d-xl-inline">Bookmarks</span>
                 </li>
-                <li class="list-group-item">
-                    <i class="fas fa-list"></i>
+                <li class="list-group-item override-bg override-font">
+                    <i class="far fa-list-alt"></i>
                     <span class="d-none d-xl-inline">Lists</span>
                 </li>
-                <li class="list-group-item">
-                    <i class="fas fa-user"></i>
+                <li class="list-group-item override-bg override-font">
+                    <i class="far fa-user"></i>
                     <span class="d-none d-xl-inline">Profile</span>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bg override-font">
                     <span class="fa-stack wd-fa-sm">
-                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="far fa-circle fa-stack-2x"></i>
                       <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                     </span>
                     <span class="d-none d-xl-inline">More</span>
                 </li>
             </ul>
-            <button type="submit" class="btn btn-primary wd-btn-custom-xxl">Tweet</button>
+            <button type="submit" class="btn btn-primary wd-btn-custom-tweet override-button-tweet">Tweet</button>
         </div>
 
 <!--        middle content-->
@@ -62,7 +62,7 @@
 <!--            search bar-->
             <div class="row">
                 <div class="col-10">
-                    <input type="search" id="searchTwitter" placeholder="Search Twitter" class="form-control wd-input-search" />
+                    <input type="search" id="searchTwitter" placeholder="Search Twitter" class="form-control wd-input-search input-text" />
                     <label class="form-label" for="searchTwitter"></label>
                 </div>
                 <div class="col-2">
@@ -75,39 +75,37 @@
 <!--            tab-->
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="for-you.html">For You</a>
+                    <a class="nav-link nav-tabs active override-active-tab border-0" href="for-you.html">For You</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trending.html">Trending</a>
+                    <a class="nav-link override-tab" href="trending.html">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
+                    <a class="nav-link override-tab" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
+                    <a class="nav-link override-tab" href="sports.html">Sports</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-none d-sm-inline-block" href="entertainment.html">Entertainment</a>
+                    <a class="nav-link d-none d-sm-inline-block override-tab" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
 
 <!--        topic image-->
-            <div class="row">
-                <div class="wd-gallery-background">
-                    <div class="carousel-caption wd-text-pos">
-                        SpaceX's Starship
-                    </div>
-                    <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" alt="" class="img-fluid">
+            <div class="card bg-inverse override-bg">
+                <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" alt="Card image cap">
+                <div class="card-img-overlay wd-text-pos d-flex align-items-end">
+                    SpaceX's Starship
                 </div>
             </div>
 
 <!--            suggested topics-->
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item override-bg">
                     <div class="row">
                         <div class="col-9 wd-suggested-area">
                             Web Development
-                            <div class="col-xxl-10 wd-suggested-title fw-bold">
+                            <div class="col-xxl-10 wd-suggested-title override-title fw-bold">
                                 ReactJS
                                 <span>
                                     <i class="fas fa-check-circle"></i>
@@ -115,7 +113,7 @@
                                 <span class="wd-suggested-area fw-normal">
                                     - 2h
                                 </span>
-                                <div class="wd-suggested-title">
+                                <div class="wd-suggested-title override-title">
                                     React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
                                 </div>
                             </div>
@@ -125,9 +123,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bg">
                     <div class="row">
-                        <div class="col-9 wd-suggested-title fw-bold">
+                        <div class="col-9 wd-suggested-title override-title fw-bold">
                             JavaScript
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -148,11 +146,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bg">
                     <div class="row">
                         <div class="col-9 wd-suggested-area">
                             Web Development
-                            <div class="wd-suggested-title fw-bold">
+                            <div class="wd-suggested-title override-title fw-bold">
                                 jQuery
                             </div>
                             <div>
@@ -164,11 +162,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bg">
                     <div class="row">
                         <div class="col-9 wd-suggested-area">
                             Web Development
-                            <div class="wd-suggested-title fw-bold">
+                            <div class="wd-suggested-title override-title fw-bold">
                                 NodeJS
                                 <span>
                                     <i class="fas fa-check-circle"></i>
@@ -192,15 +190,15 @@
 <!--        right side bar-->
         <div class="col-xxl-4 col-xl-3 col-lg-3 d-none d-lg-inline">
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     Who to Follow
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 d-flex justify-content-center">
                             <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="img-fluid">
                         </div>
-                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold">
+                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold override-follow-name">
                             Java
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -210,17 +208,17 @@
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-lg-4">
-                            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-02/ch-2-1-button.png.twimg.1920.png" class="img-fluid">
+                            <button type="submit" class="btn btn-primary wd-btn-custom-follow override-button-follow">Follow</button>
                         </div>
                     </div>
                 </li>
 
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 d-flex justify-content-center">
                             <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" class="img-fluid wd-image-rounded">
                         </div>
-                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold">
+                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold override-follow-name">
                             Relativity Space
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -230,17 +228,17 @@
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-lg-4">
-                            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-02/ch-2-1-button.png.twimg.1920.png" class="img-fluid">
+                            <button type="submit" class="btn btn-primary wd-btn-custom-follow override-button-follow">Follow</button>
                         </div>
                     </div>
                 </li>
 
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 d-flex justify-content-center">
                             <img src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg" class="img-fluid wd-image-rounded">
                         </div>
-                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold">
+                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold override-follow-name">
                             Virgin Galactic
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -250,17 +248,17 @@
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-lg-4">
-                            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-02/ch-2-1-button.png.twimg.1920.png" class="img-fluid">
+                            <button type="submit" class="btn btn-primary wd-btn-custom-follow override-button-follow">Follow</button>
                         </div>
                     </div>
                 </li>
 
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 d-flex justify-content-center">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" class="img-fluid wd-image-rounded">
                         </div>
-                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold">
+                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold override-follow-name">
                             NASA
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -270,17 +268,17 @@
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-lg-4">
-                            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-02/ch-2-1-button.png.twimg.1920.png" class="img-fluid">
+                            <button type="submit" class="btn btn-primary wd-btn-custom-follow override-button-follow">Follow</button>
                         </div>
                     </div>
                 </li>
 
-                <li class="list-group-item">
+                <li class="list-group-item override-follow">
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
+                        <div class="col-xxl-2 col-xl-3 col-lg-3 d-flex justify-content-center">
                             <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/931/524/TESLA-LOGO.jpg?ve=1&tl=1" class="img-fluid wd-image-rounded">
                         </div>
-                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold">
+                        <div class="col-xxl-7 col-xl-5 col-lg-5 wd-suggested-title fw-bold override-follow-name">
                             Tesla
                             <span>
                                 <i class="fas fa-check-circle"></i>
@@ -290,7 +288,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-lg-4">
-                            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-02/ch-2-1-button.png.twimg.1920.png" class="img-fluid">
+                            <button type="submit" class="btn btn-primary wd-btn-custom-follow override-button-follow">Follow</button>
                         </div>
                     </div>
                 </li>
