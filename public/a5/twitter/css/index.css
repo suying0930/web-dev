@@ -169,7 +169,7 @@ a {
 }
 
 .wd-post-image {
-    width: 504px;
+    width: 500px;
     height: 264px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -185,6 +185,7 @@ a {
     font-size: 15px;
     color: lightgray;
     padding: 0 12px 12px 12px;
+
 }
 
 .wd-post-image-container {

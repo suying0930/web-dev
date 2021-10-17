@@ -1,0 +1,17 @@
+export default [
+    {   icon: 'fas fa-home',
+        route: 'Home',
+        href: '../HomeScreen/home.html'},
+    {   icon: 'fas fa-hashtag',
+        route: 'Explore',
+        href: '../ExploreScreen/explore.html'},
+    {   icon: 'fas fa-bell',
+        route: 'Notifications'},
+    {   icon: 'fas fa-envelope',
+        route: 'Messages'},
+    {   icon: 'fas fa-bookmark',
+        route: 'Bookmarks'},
+    {   icon: 'fas fa-list',
+        route: 'Lists'},
+    {   icon: 'fas fa-user',
+        route: 'Profile'}];

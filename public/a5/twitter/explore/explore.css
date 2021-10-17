@@ -88,7 +88,7 @@
 }
 
 .input-text, textarea {
-    background-color: gray;
+    background: #343538;
 }
 
 .override-follow {
@@ -103,4 +103,11 @@
 .override-button-follow{
     background-color: antiquewhite;
     color: black;
+    font-size: 15px;
+}
+
+.wd-post-content {
+    font-size: 17px;
+    color: lightgray;
+    padding: 0 12px 12px 12px;
 }
