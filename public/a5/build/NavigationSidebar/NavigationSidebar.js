@@ -1,16 +1,16 @@
 import NavigationItem from "./NavigationItem.js";
-import active from "./navigations.js";
+import navlinks from "./navigations.js";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active = 'home.html') => {
     return (`
             <ul class="list-group">
                 <a class="list-group-item override-bg override-font" >
                     <i class="fab fa-twitter"></i>
                 </a>
                 ${
-                    active.map(item => {
-                        return(NavigationItem(item));
-                    }).join('')
+                    navlinks.map(item => 
+                        NavigationItem(item, active)
+                    ).join('')
                 }
                 <a class="list-group-item override-bg override-font" href="more.html">
                     <span class="fa-stack wd-fa-sm">
