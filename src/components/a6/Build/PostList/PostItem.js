@@ -1,4 +1,5 @@
 import React from "react";
+import "./post.css";
 
 const PostItem = (
     {
@@ -31,7 +32,8 @@ const PostItem = (
                             {post.handler} · {post.time}
                         </span>
                     <div className="wd-post-main-content">
-                        {post.tweet}
+                        {/*{post.tweet}*/}
+                        <span dangerouslySetInnerHTML={{__html:post["tweet"]}}></span>
                     </div>
 
                     <div className="card wd-post-image-container">
@@ -40,7 +42,7 @@ const PostItem = (
                             {post.title}
                         </div>
                         <div className="text-muted">
-                            {post.content}
+                            <span dangerouslySetInnerHTML={{__html:post["content"]}}></span>
                         </div>
                     </div>
                 </div>
