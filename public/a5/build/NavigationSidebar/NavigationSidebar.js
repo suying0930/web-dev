@@ -8,10 +8,10 @@ const NavigationSidebar = (active = 'home.html') => {
                     <i class="fab fa-twitter"></i>
                 </a>
                 ${
-                    navlinks.map(item => 
-                        NavigationItem(item, active)
-                    ).join('')
-                }
+        navlinks.map(item =>
+            NavigationItem(item, active)
+        ).join('')
+    }
                 <a class="list-group-item override-bg override-font" href="more.html">
                     <span class="fa-stack wd-fa-sm">
                       <i class="fas fa-circle fa-stack-2x"></i>

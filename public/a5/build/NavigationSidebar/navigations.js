@@ -1,30 +1,30 @@
 export default [
     {   icon: 'fas fa-home',
-        route: 'home.html',
+        name: 'Home',
         href: '../HomeScreen/home.html'
     },
     {   icon: 'fas fa-hashtag',
-        route: 'explore.html',
+        name: 'Explore',
         href: '../ExploreScreen/explore.html'
     },
     {   icon: 'fas fa-bell',
-        route: 'notifications.html',
-        href: '#'
+        name: 'Notifications',
+        href: 'notifications.html'
     },
     {   icon: 'fas fa-envelope',
-        route: 'messages.html',
-        href: '#'
+        name: 'Messages',
+        href: 'messages.html'
     },
     {   icon: 'fas fa-bookmark',
-        route: 'bookmarks.html',
-        href: '#'
+        name: 'Bookmarks',
+        href: 'bookmarks.html'
     },
     {   icon: 'fas fa-list',
-        route: 'lists.html',
-        href: '#'
+        name: 'Lists',
+        href: 'lists.html'
     },
     {   icon: 'fas fa-user',
-        route: 'profile.html',
-        href: '#'
+        name: 'Profile',
+        href: 'profile.html'
     }
 ];

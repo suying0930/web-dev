@@ -169,3 +169,5 @@ console.log(greeting1);
 // const loggedIn = false;
 const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2);
+
+const nnu = ['tr','ya','fk','yj','tl']
