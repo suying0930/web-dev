@@ -30,7 +30,7 @@ const PostSummaryItem = (
                         </div>
                     </div>
                     <div className="col-3 d-flex justify-content-center">
-                        <img alt={`${post.userName}-logo`}src={post.image} className="img-fluid wd-post-image"/>
+                        <img alt={`${post.userName}-logo`} src={post.image} className="img-fluid wd-post-image"/>
                     </div>
                 </div>
             </li>
