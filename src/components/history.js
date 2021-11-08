@@ -17,7 +17,7 @@ const History = () => {
             </ul>
             <h3>Assignment 4</h3>
             <ul>
-                <li><a href="/public/a4/practice/bootstrap/index.html">Bootstrap Practice</a></li>
+                <li><a href="/a4/practice/bootstrap/index.html">Bootstrap Practice</a></li>
                 <li><a href="/a4/twitter/navigation.html">Twitter clone</a></li>
                 <li><a href="/a4/twitter/explore/explore.html">explore.html</a></li>
                 <li><a href="/a4/challenge/index.html">Boostrap Challenge</a></li>
@@ -28,6 +28,10 @@ const History = () => {
                 <li><a href="/a5/practice/todos/index.html">ToDoList Practice</a></li>
                 <li><a href="/a5/build/ExploreScreen/explore.html">A5 Practice ExploreScreen</a></li>
                 <li><a href="/a5/challenge/HomeScreen/home.html">A5 Challenge HomeScreen</a></li>
+            </ul>
+            <h3>Assignment 6</h3>
+            <ul>
+                <li></li>
             </ul>
         </div>
     )

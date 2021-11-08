@@ -1,0 +1,22 @@
+.wd-post-image {
+    border-radius: 10px;
+}
+
+.wd-suggested-title {
+    font-size: 12px;
+    color: white;
+}
+
+.wd-suggested-title {
+    font-size: 12px;
+    color: white;
+}
+
+.wd-suggested-title.override-title {
+    color: antiquewhite;
+}
+
+.wd-suggested-area {
+    font-size: 14px;
+    color: gray;
+}
