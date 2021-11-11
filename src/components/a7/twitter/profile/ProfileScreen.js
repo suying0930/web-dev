@@ -1,5 +1,5 @@
 import NavigationSidebar from "../../Build/NavigationSidebar/NavigationSidebar";
-import WhatsHappening from "../../Build/WhatsHappening";
+import Profile from "./Profile";
 import TweetList from "../../Build/TweetList";
 import PostSummaryList from "../../Build/PostSummaryList/PostSummaryList";
 import React from "react";
@@ -8,12 +8,12 @@ const ProfileScreen = () => {
     return(
         <div className="row mt-2">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                <NavigationSidebar active="home"/>
+                <NavigationSidebar active="profile"/>
             </div>
 
-            <div className="col-xxl-6 col-xl-6 col-lg-8 col-10">
+            <div className="col-xxl-6 col-xl-6 col-lg-8 col-10"
                 style={{"position": "relative"}}>
-                <WhatsHappening/>
+                <Profile/>
                 <TweetList/>
             </div>
 

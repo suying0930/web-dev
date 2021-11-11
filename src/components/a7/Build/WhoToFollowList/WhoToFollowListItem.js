@@ -1,35 +1,35 @@
 import React from "react";
 import './who-to-follow.css';
 
-const whoToFollowListItem = (
+const WhoToFollowListItem = (
     {
         who = {
-            avatarIcon: '/images/nasa.png',
-            userName: 'NASA',
-            handle: 'NASA'
+            avatarIcon: '../../../images/java.png',
+            userName: 'Java',
+            handle: 'Java',
         }
     }) => {
-        return(
-            <li className="list-group-item override-follow">
-                <div className="row">
-                    <div className="col-xxl-2 col-xl-2 col-lg-2 d-flex justify-content-center">
-                        <img alt={`${who.userName}-avatar`} src={who.avatarIcon} width = "48" className="img-fluid rounded-circle"/>
-                    </div>
-                    <div className="col-xxl-7 col-xl-6 col-lg-6 wd-suggested-title fw-bold override-follow-name">
-                        {who.userName}
-                        <span>
-                            <i className="fas fa-check-circle"></i>
-                        </span>
-                        <div className="fw-normal">
-                            {who.handle}
-                        </div>
-                    </div>
-                    <div className="col-xxl-3 col-xl-4 col-lg-4 d-flex justify-content-center">
-                        <button type="submit" className="btn btn-primary btn-block rounded-pill">Follow</button>
-                    </div>
+    return(
+        <li className="list-group-item">
+            <div className="row">
+                <div className="col-2">
+                    <img alt="eeee" src={who.avatarIcon} width="48" className="rounded-circle float-start"/>
                 </div>
-            </li>
-        );
+                <div className="col-8">
+                    <div className="fw-bold">{who.userName}
+                        <span className="fa-stack" style={{"font-size": "0.5em"}}>
+                          <i className="fas fa-circle fa-stack-2x"></i>
+                          <i className="fas fa-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div>@{who.handle}</div>
+                </div>
+                <div className="col-2">
+                    <button className="rounded-pill float-end btn btn-primary mt-1">Follow</button>
+                </div>
+            </div>
+        </li>
+    );
 }
 
-export default whoToFollowListItem;
+export default WhoToFollowListItem;

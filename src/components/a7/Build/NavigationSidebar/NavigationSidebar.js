@@ -39,6 +39,11 @@ const NavigationSidebar = ({active}) => {
                     <i className="fas fa-list"></i>
                     <span className="d-none d-xl-inline">Lists</span>
                 </Link>
+                <Link to="/a7/twitter/profile" className={isActive(active, 'profile')}
+                      href="../../twitter/profile/profile.html">
+                    <i className="fas fa-user"></i>
+                    <span className="d-none d-xl-inline">Profile</span>
+                </Link>
                 <Link to="#" className={isActive(active, 'more')}
                    href="more.html">
                     <span className="fa-stack wd-fa-sm">

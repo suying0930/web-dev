@@ -1,0 +1,76 @@
+.wd-remove-color {
+    color: white;
+}
+
+.wd-profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 30px;
+}
+
+.wd-name-margin-top {
+    margin-top: 10px;
+}
+
+.wd-name-margin-bottom {
+    margin-bottom: -5px;
+}
+
+.wd-save-color {
+    color: black;
+}
+
+.wd-edit-profile-color {
+    color: white;
+    border-color: gray;
+}
+
+.wd-edit-name {
+    margin-top: 50px;
+}
+
+.wd-edit-profile {
+    margin-top: 20px;
+    border-color: gray;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.wd-section-name {
+    color: gray;
+}
+
+.has-search .form-control {
+    padding-top: 2rem;
+    padding-left: 5px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: left;
+    pointer-events: none;
+    margin-left: 5px;
+}
+
+.input-text {
+    border-color: darkgrey;
+    color: white;
+    background-color: transparent;
+}
+
+.wd-birth-date {
+    margin-left: 3px;
+}
+.wd-edit-born-date {
+    border: none;
+    background: transparent;
+    color: #1d9bf0;
+}

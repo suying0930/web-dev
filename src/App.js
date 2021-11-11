@@ -7,12 +7,13 @@ import Build from "./components/a7/Build";
 import './App.css';
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
+import profile from "./reducers/profile";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import React from "react";
 import HelloWorld from "./components/a7/HelloWorld";
 
-const reducer = combineReducers({tweets:tweets, who})
+const reducer = combineReducers({tweets:tweets, who, profile})
 const store = createStore(reducer);
 
 function App() {
