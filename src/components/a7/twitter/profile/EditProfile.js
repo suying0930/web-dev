@@ -42,7 +42,7 @@ const EditProfile = (
             </div>
             <img src={profile.profilePicture} className="wd-profile-picture rounded-circle"/>
 
-            <div className="form-group has-search wd-edit-name">
+            <div className="form-group has-update wd-edit-name">
                 <div className="form-control-feedback wd-section-name">Name</div>
                 <textarea id="edit-name"
                           className="form-control border border-light input-text" aria-label="Name"
@@ -50,15 +50,15 @@ const EditProfile = (
                 <label className="form-label" htmlFor="edit-name"></label>
             </div>
 
-            <div className="form-group has-search wd-edit-profile">
+            <div className="form-group has-update wd-edit-profile">
                 <div className="form-control-feedback wd-section-name">Bio</div>
                 <textarea id="edit-bio"
-                          className="form-control border border-light border-light input-text" aria-label="Bio"
+                          className="form-control border border-light input-text" aria-label="Bio"
                           aria-describedby="bio-addon"/>
                 <label className="form-label" htmlFor="edit-bio"></label>
             </div>
 
-            <div className="form-group has-search wd-edit-profile">
+            <div className="form-group has-update wd-edit-profile">
                 <div className="form-control-feedback wd-section-name">Location</div>
                 <textarea id="edit-location"
                           className="form-control border border-light input-text" aria-label="Location"
@@ -66,7 +66,7 @@ const EditProfile = (
                 <label className="form-label" htmlFor="edit-location"></label>
             </div>
 
-            <div className="form-group has-search wd-edit-profile">
+            <div className="form-group has-update wd-edit-profile">
                 <div className="form-control-feedback wd-section-name">Website</div>
                 <textarea id="edit-website"
                           className="form-control border border-light input-text" aria-label="Website"

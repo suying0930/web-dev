@@ -29,10 +29,6 @@ const History = () => {
                 <li><a href="/a5/build/ExploreScreen/explore.html">A5 Practice ExploreScreen</a></li>
                 <li><a href="/a5/challenge/HomeScreen/home.html">A5 Challenge HomeScreen</a></li>
             </ul>
-            <h3>Assignment 6</h3>
-            <ul>
-                <li></li>
-            </ul>
         </div>
     )
 }
