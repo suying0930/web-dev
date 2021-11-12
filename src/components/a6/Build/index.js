@@ -1,6 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import ExploreScreen from "./ExploreScreen/ExploreScreen";
+import {Link, Route} from "react-router-dom";
+import ExploreScreen from "../twitter/ExploreScreen/ExploreScreen";
+import HomeScreen from "../twitter/HomeScreen/HomeScreen";
 
 export const Build = () => {
     return (
@@ -12,7 +13,10 @@ export const Build = () => {
             <Link to="/a6/practice">
                 Practice
             </Link>
-            <ExploreScreen />
+            <Route path={["/", "/a6/twitter/home"]}
+                   exact={true} component={HomeScreen}/>
+            <Route path="/a6/twitter/explore"
+                   exact={true} component={ExploreScreen}/>
         </>
     )
 };

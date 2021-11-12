@@ -1,7 +1,7 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar/NavigationSidebar";
-import PostList from "../PostList/PostList";
-import PostSummaryList from "../PostSummaryList/PostSummaryList";
+import NavigationSidebar from "../../Build/NavigationSidebar/NavigationSidebar";
+import PostList from "../../Build/PostList/PostList";
+import PostSummaryList from "../../Build/PostSummaryList/PostSummaryList";
 
 const HomeScreen = () => {
     return(
