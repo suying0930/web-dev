@@ -4,23 +4,7 @@ import './profile.css';
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
-const EditProfile = (
-    {
-        // profile = {
-        //     name: 'Susie Liu',
-        //     handle: 'suying',
-        //     profilePicture: '../../../../../assets/headshot.JPG',
-        //     bannerPicture: '../../../../../assets/profileImage.png',
-        //     bio: 'Workout, food lover. Love spicy food and life.',
-        //     website: 'github.com/suying0930/web-dev',
-        //     location: 'San Jose, CA',
-        //     dateOfBirth: '2001-07-07',
-        //     dateJoined: '09/2017',
-        //     followingCount: '312',
-        //     followersCount: '180',
-        // }
-    }
-) => {
+const EditProfile = () => {
     const profile = useSelector(state => state.profile);
     const dispatch = useDispatch();
     const history = useHistory();
