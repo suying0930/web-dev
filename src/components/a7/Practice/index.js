@@ -7,10 +7,10 @@ import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
 import ReduxExamples from "./ReduxExamples/components";
 
-const Practice = () => {
+export const Practice = () => {
     return(
         <>
-            <h1>Practice</h1>
+            <h1>A7 Practice</h1>
             <Link to="/a7/hello">
                 Hello
             </Link> |
@@ -28,4 +28,3 @@ const Practice = () => {
 };
 
 export default Practice;
-

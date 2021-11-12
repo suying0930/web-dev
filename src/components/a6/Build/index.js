@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 
-const Build = () => {
+export const Build = () => {
     return (
         <>
             <h1>Build</h1>

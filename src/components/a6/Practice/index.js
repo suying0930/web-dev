@@ -6,10 +6,10 @@ import ConditionalOutput from "./ConditionalOutput";
 import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
 
-const Practice = () => {
+export const Practice = () => {
     return(
         <>
-            <h1>Practice</h1>
+            <h1>A6 Practice</h1>
             <Link to="/a6/hello">
                 Hello
             </Link> |

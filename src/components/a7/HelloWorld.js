@@ -2,7 +2,7 @@ import React from "react";
 import A7 from "./index";
 import History from "../history";
 
-const HelloWorld = () => {
+export const HelloWorld = () => {
     return (
         <div>
             <h1>Hello World!</h1>

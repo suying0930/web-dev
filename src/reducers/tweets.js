@@ -23,7 +23,6 @@ const tweets = (state = initialState, action) => {
                     }
                 })
             });
-            break;
         case 'delete-tweet':
             return ({
                 tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)

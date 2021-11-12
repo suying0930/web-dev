@@ -5,7 +5,7 @@ import HomeScreen from "../twitter/HomeScreen/HomeScreen";
 import ProfileScreen from "../twitter/profile/ProfileScreen";
 import EditProfile from "../twitter/profile/EditProfile";
 
-const Build = () => {
+export const Build = () => {
     return (
             <div>
                 <Route path={["/", "/a7/twitter/home"]}
