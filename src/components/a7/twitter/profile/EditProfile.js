@@ -30,6 +30,7 @@ const EditProfile = (
     const [editLocation, setEditLocation] = useState(profile.location);
     const [editWebsite, setEditWebsite] = useState(profile.website);
     const [editBirthDate, setEditBirthDate] = useState(profile.dateOfBirth);
+    const [isEditingDate, setIsEditingDate] = useState(false);
 
     const handleNameChange = (event) => {
         const newName = event.target.value;
@@ -56,6 +57,10 @@ const EditProfile = (
         setEditBirthDate(newBirthDate);
     }
 
+    const toggleDateEdit = () => {
+        setIsEditingDate(!isEditingDate);
+    };
+
     const saveClickHandler = () => {
         console.log('saveClickHandler')
         dispatch({
@@ -68,14 +73,6 @@ const EditProfile = (
                 dateOfBirth: editBirthDate,
             },
         });
-        // setEditName(editName);
-    }
-
-    const removeClickHandler = () => {
-        console.log('removeClickHandler')
-        dispatch({
-            type: 'remove '
-        })
     }
 
     return (
@@ -156,16 +153,27 @@ const EditProfile = (
                 <div>
                     Birth date
                     <span className="wd-birth-date">
-                        · <button type="reset" className="wd-edit-born-date">
+                        ·
+                        <button
+                            onClick={toggleDateEdit}
+                            className="wd-edit-born-date"
+                        >
                             Edit
                         </button>
                         <label htmlFor="edit-birth-date"></label>
                     </span>
                 </div>
-                <input id="edit-birth-date"
+                {isEditingDate &&
+                    <input id="edit-birth-date"
                        type="date"
                        onChange={handleBirthDateChange}
                        value={editBirthDate}/>
+                }
+                {!isEditingDate &&
+                    <div>
+                        {editBirthDate}
+                    </div>
+                }
             </div>
         </div>
     )
