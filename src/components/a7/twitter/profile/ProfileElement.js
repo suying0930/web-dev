@@ -1,22 +1,26 @@
 import React from "react";
 import "./profile.css"
+import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 const ProfileElement = (
-    {
-        profile = {
-            name: 'Susie Liu',
-            handle: 'suying',
-            profilePicture: '../../../../../assets/headshot.JPG',
-            bannerPicture: '../../../../../assets/profileImage.png',
-            bio: 'Workout, food lover. Love spicy food and life.',
-            website: 'github.com/suying0930/web-dev',
-            location: 'San Jose, CA',
-            dateOfBirth: '7/7/2001',
-            dateJoined: '09/2017',
-            followingCount: '312',
-            followersCount: '180',
-        }
-    }) => {
+    // {
+        // profile = {
+        //     name: 'Susie Liu',
+        //     handle: 'suying',
+        //     profilePicture: '../../../../../assets/headshot.JPG',
+        //     bannerPicture: '../../../../../assets/profileImage.png',
+        //     bio: 'Workout, food lover. Love spicy food and life.',
+        //     website: 'github.com/suying0930/web-dev',
+        //     location: 'San Jose, CA',
+        //     dateOfBirth: '2001-07-07',
+        //     dateJoined: '09/2017',
+        //     followingCount: '312',
+        //     followersCount: '180',
+        // }
+    ) => {
+    const profile = useSelector(state => state.profile);
+
     return(
         <div>
             <div className="row">
@@ -43,10 +47,10 @@ const ProfileElement = (
                         <img src={profile.profilePicture} className="wd-profile-picture rounded-circle"/>
                     </div>
                     <div className="col-3">
-                        <a href="edit-profile"
+                        <Link to={'/a7/twitter/edit-profile'}
                            className="btn btn-outline-primary btn-block rounded-pill float-end wd-edit-profile-color">
                             Edit profile
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,13 @@
-[
-  {
-    "name": "Susie Liu",
-    "handle": "suying",
-    "profilePicture": "jose.png",
-    "bannerPicture": "polyglot.png",
-    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.",
-	"website": "youtube.com/webdevtv",
-    "location": "Boston, MA",
-    "dateOfBirth": "7/7/1968",
-    "dateJoined": "4/2009",
-    "followingCount": "312",
-    "followersCount": "180"
-  }
-]
-
+{
+  "name": "Susie Liu",
+  "handle": "suying",
+  "profilePicture": "../../../../../assets/headshot.JPG",
+  "bannerPicture": "../../../../../assets/profileImage.png",
+  "bio": "Workout, food lover. Love spicy food and life.",
+  "website": "github.com/suying0930/web-dev",
+  "location": "San Jose, CA",
+  "dateOfBirth": "2001-07-07",
+  "dateJoined": "2017-09-01",
+  "followingCount": "312",
+  "followersCount": "180"
+}

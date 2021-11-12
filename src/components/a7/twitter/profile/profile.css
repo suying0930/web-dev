@@ -1,5 +1,7 @@
 .wd-remove-color {
     color: white;
+    background: transparent;
+    border-radius: 50%;
 }
 
 .wd-profile-picture {

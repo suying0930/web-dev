@@ -13,7 +13,7 @@ import {Provider} from "react-redux";
 import React from "react";
 import HelloWorld from "./components/a7/HelloWorld";
 
-const reducer = combineReducers({tweets:tweets, who, profile})
+const reducer = combineReducers({tweets, who, profile})
 const store = createStore(reducer);
 
 function App() {
