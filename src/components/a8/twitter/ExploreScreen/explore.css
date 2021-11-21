@@ -1,0 +1,157 @@
+ul {
+    list-style: none;
+}
+
+.wd-margin-top {
+    margin-top: 10px;
+}
+
+.wd-fa-sm {
+    font-size: 0.5em;
+}
+
+.wd-btn-custom-tweet {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+
+.wd-btn-custom-search {
+    font-size: 20px;
+    border: none !important;
+}
+
+.wd-input-search {
+    border-radius: 30px;
+}
+
+.wd-text-pos {
+    font-size: 30px;
+    color: white;
+}
+
+.wd-image-rounded {
+    border-radius: 50%;
+}
+
+.wd-btn-custom-follow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.override-bg {
+    background-color: black !important;
+}
+
+.override-font {
+    color: #d9d9d9;
+}
+
+.override-button-tweet {
+    background-color: #1d9bf0;
+}
+
+.override-tab {
+    color: darkgrey;
+}
+
+.nav-tabs.active.override-active-tab {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.wd-suggested-title.override-title {
+    color: antiquewhite;
+}
+
+.input-text, textarea {
+    background: #343538;
+}
+
+.override-follow {
+    background: #2d2e31;
+    color: antiquewhite;
+}
+
+.override-follow-name {
+    color: antiquewhite;
+}
+
+.override-button-follow{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.wd-avatar-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-post-image-container {
+    border-radius: 10px;
+    border: solid #494c4f 1px;
+}
+
+.wd-post-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wd-post-title {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-post-container {
+    margin-top: 16px;
+    border-bottom: solid #494c4f 1px;
+}
+
+.wd-post {
+    font-size: 15px;
+    color: white;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-post-user-interaction {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wd-post-user-interaction .item {
+    margin: 0 auto 0 0;
+}
+
+a {
+    text-decoration:none;
+}
+
+.wd-post-number-space {
+    margin-left: 12px;
+}
