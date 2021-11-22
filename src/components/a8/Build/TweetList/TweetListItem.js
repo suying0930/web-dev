@@ -7,7 +7,6 @@ import {deleteTweet} from "../../../../services/tweetService";
 const TweetListItem = ({tweet}) => {
     const dispatch = useDispatch();
     const deleteTweetClickHandler = () => {
-        // dispatch({type: "delete-tweet", tweet})
         deleteTweet(dispatch, tweet);
     }
     return(

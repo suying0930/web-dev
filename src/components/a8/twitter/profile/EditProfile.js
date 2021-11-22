@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom";
 import './profile.css';
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
+import {updateProfile} from "../../../../services/profileService";
 
 const EditProfile = () => {
     const profile = useSelector(state => state.profile);
@@ -47,7 +48,7 @@ const EditProfile = () => {
 
     const saveClickHandler = () => {
         console.log('saveClickHandler')
-        dispatch({
+        /*dispatch({
             type: 'EDIT',
             payload: {
                 name: editName,
@@ -56,14 +57,21 @@ const EditProfile = () => {
                 website: editWebsite,
                 dateOfBirth: editBirthDate,
             },
+        });*/
+        updateProfile(dispatch, {
+            name: editName,
+            bio: editBio,
+            location: editLocation,
+            website: editWebsite,
+            dateOfBirth: editBirthDate,
         });
-    }
+    };
 
     return (
         <div className="wd-margin-top">
             <div className="row">
                 <div className="col-1">
-                    <button onClick={() => history.push('/a7/twitter/profile')}
+                    <button onClick={() => history.push('/a8/twitter/profile')}
                             className="wd-remove-color">
                         <i className="fa fa-remove"></i>
                     </button>
@@ -75,7 +83,7 @@ const EditProfile = () => {
                     </h5>
                 </div>
                 <div className="col-3">
-                    <Link to={'/a7/twitter/profile'}>
+                    <Link to={'/a8/twitter/profile'}>
                         <button className="rounded-pill float-end btn btn-primary bg-white wd-save-color"
                                 onClick={saveClickHandler}>
                             Save

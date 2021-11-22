@@ -1,25 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./profile.css"
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
+import {getCurrentProfile} from "../../../../services/profileService";
 
-const ProfileElement = (
-    // {
-        // profile = {
-        //     name: 'Susie Liu',
-        //     handle: 'suying',
-        //     profilePicture: '../../../../../assets/headshot.JPG',
-        //     bannerPicture: '../../../../../assets/profileImage.png',
-        //     bio: 'Workout, food lover. Love spicy food and life.',
-        //     website: 'github.com/suying0930/web-dev',
-        //     location: 'San Jose, CA',
-        //     dateOfBirth: '2001-07-07',
-        //     dateJoined: '09/2017',
-        //     followingCount: '312',
-        //     followersCount: '180',
-        // }
-    ) => {
+const ProfileElement = () => {
     const profile = useSelector(state => state.profile);
+    const dispatch = useDispatch();
+    useEffect(() => getCurrentProfile(dispatch));
 
     return(
         <div>
@@ -47,7 +35,7 @@ const ProfileElement = (
                         <img src={profile.profilePicture} className="wd-profile-picture rounded-circle"/>
                     </div>
                     <div className="col-3">
-                        <Link to={'/a7/twitter/edit-profile'}
+                        <Link to={'/a8/twitter/edit-profile'}
                            className="btn btn-outline-primary btn-block rounded-pill float-end wd-edit-profile-color">
                             Edit profile
                         </Link>
