@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './who-to-follow.css';
 
 const WhoToFollowListItem = (
@@ -9,6 +9,7 @@ const WhoToFollowListItem = (
             handle: 'Java',
         }
     }) => {
+    console.log('This who:', who);
     return(
         <li className="list-group-item">
             <div className="row">

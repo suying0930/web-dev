@@ -1,18 +1,29 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import whoService from "../../../../services/whoService";
 
-const selectAllWho = (state) => state.who
+const selectAllWho = (state) => state.who.whoList;
 
 const WhoToFollowList = () => {
-    const who = useSelector(selectAllWho);
+    const whoList = useSelector(selectAllWho);
+    const dispatch = useDispatch();
+    useEffect(() =>
+        whoService.findAllWho()
+            .then(who => {
+                console.log('findAllWho:', who);
+                dispatch({
+                    type: 'FIND-ALL-WHO',
+                    payload: who,
+                });
+            }), []);
     return (
             <ul className="list-group">
                 <li className="list-group-item override-follow">
                     Who to Follow
                 </li>
                 {
-                    who.map(whoItem => {
+                    whoList.map(whoItem => {
                         return(<WhoToFollowListItem who={whoItem}/>);
                     })
                 }
