@@ -30,21 +30,32 @@ export const postNewTweet = (dispatch, newTweet) =>
 export const deleteTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}`, {
         method: 'DELETE'
-    }).then(response => dispatch({
-        type: 'delete-tweet',
-        tweet
-    }));
+    })
+        .then(response => {
+            dispatch({
+                type: 'delete-tweet',
+                tweet: tweet
+            });
+            return response.json();
+        })
+        .then(resolvedResponse => console.log('This is response of deleteTweet:', resolvedResponse));
 
 export const likeTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}/like`, {
-        method: 'PUT'
+        method: 'PUT',
+        body: JSON.stringify(tweet),
+        headers: {
+            'content-type': 'application/json'
+        }
     })
-        .then(response =>
+        .then(response => {
             dispatch({
                 type: 'like-tweet',
-                tweet
-            })
-        );
+                tweet: tweet
+            });
+            return response.json();
+        })
+        .then(resolvedResponse => console.log('This is response of likeTweet:', resolvedResponse));
 
 export default {
     fetchAllTweets, postNewTweet, deleteTweet, likeTweet

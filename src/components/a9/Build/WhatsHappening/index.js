@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {postNewTweet, fetchAllTweets} from "../../../../services/tweetService";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening] = useState('');
+    const [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
         // dispatch({type: 'create-tweet',
@@ -12,7 +12,20 @@ const WhatsHappening = () => {
         //     }
         // });
         postNewTweet(dispatch, {
-            tweet: whatsHappening
+            topic: "Web Development",
+            userName: "ReactJS",
+            verified: false,
+            handle: "ReactJS",
+            time: "2h",
+            avatarImage: "../../../images/react-blue.png",
+            logoImage: "../../../images/react-blue.png",
+            liked: false,
+            stats: {
+                comments: 123,
+                retweets: 234,
+                likes: 345
+            },
+            tweet: whatsHappening,
         });
     }
     return(
