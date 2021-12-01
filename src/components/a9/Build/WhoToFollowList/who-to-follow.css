@@ -1,0 +1,22 @@
+.override-follow {
+    background: #2d2e31;
+    color: antiquewhite;
+}
+
+.wd-suggested-title {
+    font-size: 12px;
+    color: white;
+}
+
+.override-follow-name {
+    color: antiquewhite;
+}
+
+.wd-suggested-title {
+    font-size: 12px;
+    color: white;
+}
+
+.wd-suggested-title.override-title {
+    color: antiquewhite;
+}

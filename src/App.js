@@ -5,9 +5,11 @@ import {BrowserRouter, Route, Link} from "react-router-dom";
 import {Practice as A6_PRACTICE} from "./components/a6/Practice";
 import {Practice as A7_PRACTICE} from "./components/a7/Practice";
 import {Practice as A8_PRACTICE} from "./components/a8/Practice";
+import {Practice as A9_PRACTICE} from "./components/a9/Practice";
 import {Build as A6_BUILD} from "./components/a6/Build";
 import {Build as A7_BUILD} from "./components/a7/Build";
 import {Build as A8_BUILD} from "./components/a8/Build";
+import {Build as A9_BUILD} from "./components/a9/Build";
 import './App.css';
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
@@ -18,9 +20,11 @@ import React from "react";
 import {HelloWorld as A6_HELLOWORLD} from "./components/a6/HelloWorld";
 import {HelloWorld as A7_HELLOWORLD} from "./components/a7/HelloWorld";
 import {HelloWorld as A8_HELLOWORLD} from "./components/a8/HelloWorld";
+import {HelloWorld as A9_HELLOWORLD} from "./components/a9/HelloWorld";
 import A6 from "./components/a6";
 import A7 from "./components/a7";
 import A8 from "./components/a8";
+import A9 from "./components/a9";
 
 const reducer = combineReducers({tweets, who, profile})
 const store = createStore(reducer);
@@ -32,7 +36,8 @@ function App() {
                 <div className="container">
                     <Link to="/a6/practice">A6</Link> |
                     <Link to="/a7/practice">A7</Link> |
-                    <Link to="/a8/practice">A8</Link>
+                    <Link to="/a8/practice">A8</Link> |
+                    <Link to="/a9/practice">A9</Link>
 
                     <Route path="/a6">
                         <A6/>
@@ -71,6 +76,19 @@ function App() {
                     </Route>
                     <Route path="/a8/twitter">
                         <A8_BUILD/>
+                    </Route>
+
+                    <Route path="/a9">
+                        <A9/>
+                    </Route>
+                    <Route path="/a9/hello" exact={true}>
+                        <A9_HELLOWORLD/>
+                    </Route>
+                    <Route path={["/", "/a9", "/a9/practice"]} exact={true}>
+                        <A9_PRACTICE/>
+                    </Route>
+                    <Route path="/a9/twitter">
+                        <A9_BUILD/>
                     </Route>
                 </div>
             </BrowserRouter>

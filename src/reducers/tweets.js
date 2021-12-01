@@ -34,25 +34,26 @@ const tweets = (state = initialState, action) => {
             })
             break;
         case 'create-tweet':
-            const tweet = {
+            const newTweet = {
                 _id: (new Date()).getTime() + '',
-                "topic": "Web Development",
-                "userName": "ReactJS",
-                "verified": false,
-                "handle": "ReactJS",
-                "time": "2h",
-                ...action.tweet,
-                "avatar-image": "../../../images/react-blue.png",
-                "logo-image": "../../../images/react-blue.png",
-                "stats": {
-                    "comments": 123,
-                    "retweets": 234,
-                    "likes": 345
+                tweet: "This is a new Tweet!",
+                topic: "Web Development",
+                userName: "ReactJS",
+                verified: false,
+                handle: "ReactJS",
+                time: "2h",
+                avatarImage: "../../../images/react-blue.png",
+                logoImage: "../../../images/react-blue.png",
+                stats: {
+                    comments: 123,
+                    retweets: 234,
+                    likes: 345
                 },
+                ...action.tweet,
             };
             return ({
                 tweets: [
-                    tweet,
+                    newTweet,
                     ...state.tweets,
                 ]
             });

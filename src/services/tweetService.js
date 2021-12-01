@@ -1,5 +1,5 @@
-// const TWEET_API = 'http://localhost:4000/api/tweets';
-const TWEET_API = 'https://boiling-shelf-43750.herokuapp.com/api/tweets';
+const TWEET_API = 'http://localhost:4000/api/tweets';
+// const TWEET_API = 'https://boiling-shelf-43750.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
@@ -45,3 +45,7 @@ export const likeTweet = (dispatch, tweet) =>
                 tweet
             })
         );
+
+export default {
+    fetchAllTweets, postNewTweet, deleteTweet, likeTweet
+};
