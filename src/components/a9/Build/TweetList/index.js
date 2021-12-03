@@ -13,8 +13,8 @@ const TweetList = () => {
     return(
         <ul className="list-group">
             {
-                tweets.map(tweet =>
-                    <TweetListItem tweet={tweet}/>
+                tweets.map((tweet, idx) =>
+                    <TweetListItem key={idx} tweet={tweet}/>
                 )
             }
         </ul>

@@ -1,12 +1,15 @@
 import owner from './data/profile.json';
 
+export const getCurrProfile = 'get-current-profile';
+export const updateProfileById = 'update-profile';
+
 const initialState = {
     ...owner,
 };
 
 const profile = (state = initialState, action) => {
     switch (action.type) {
-        case 'get-current-profile':
+        case getCurrProfile:
             return ({
                 ...state,
                 ...action.profile,
@@ -17,7 +20,7 @@ const profile = (state = initialState, action) => {
                 ...state,
                 ...action.payload,
             });
-        case 'update-profile':
+        case updateProfileById:
             return ({
                 ...state,
                 ...action.profile,

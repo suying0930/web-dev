@@ -3,7 +3,8 @@ import {useHistory} from "react-router-dom";
 import './profile.css';
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {updateProfile} from "../../../../services/profileService";
+// import {updateProfile} from "../../../../services/profileService";
+import profileService from "../../../../services/profileService";
 
 const EditProfile = () => {
     const profile = useSelector(state => state.profile);
@@ -47,7 +48,7 @@ const EditProfile = () => {
     };
 
     const saveClickHandler = () => {
-        console.log('saveClickHandler')
+        console.log('saveClickHandler:', profile._id)
         /*dispatch({
             type: 'EDIT',
             payload: {
@@ -58,12 +59,20 @@ const EditProfile = () => {
                 dateOfBirth: editBirthDate,
             },
         });*/
-        updateProfile(dispatch, {
+        // updateProfile(dispatch, {
+        //     name: editName,
+        //     bio: editBio,
+        //     location: editLocation,
+        //     website: editWebsite,
+        //     dateOfBirth: editBirthDate,
+        // });
+        profileService.updateProfile(dispatch, {
+            ...profile,
             name: editName,
             bio: editBio,
             location: editLocation,
             website: editWebsite,
-            dateOfBirth: editBirthDate,
+            dateOfBirth: editBirthDate
         });
     };
 

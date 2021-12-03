@@ -85,9 +85,9 @@ const EditProfile = () => {
             </div>
 
             <div className="wd-margin-top">
-                <img height="200px" width="100%" src={profile.bannerPicture}/>
+                <img height="200px" width="100%" src={profile.bannerPicture} alt={`${profile.name}-bannerPic`}/>
             </div>
-            <img src={profile.profilePicture} className="wd-profile-picture rounded-circle"/>
+            <img src={profile.profilePicture} className="wd-profile-picture rounded-circle" alt={`${profile.name}-profilePic`}/>
 
             <div className="form-group has-update wd-edit-name">
                 <div className="form-control-feedback wd-section-name">Name</div>

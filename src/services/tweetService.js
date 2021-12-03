@@ -4,11 +4,13 @@ const TWEET_API = 'http://localhost:4000/api/tweets';
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
         .then(response => response.json())
-        .then(tweets =>
-            dispatch({
-                type: 'fetch-all-tweets',
-                tweets
-            })
+        .then(tweets => {
+                console.log('All tweets:', tweets);
+                dispatch({
+                    type: 'fetch-all-tweets',
+                    tweets
+                });
+            }
         );
 
 export const postNewTweet = (dispatch, newTweet) =>
@@ -20,11 +22,13 @@ export const postNewTweet = (dispatch, newTweet) =>
         }
     })
         .then(response => response.json())
-        .then(tweet =>
-            dispatch({
-                type: 'create-tweet',
-                tweet
-            })
+        .then(tweet => {
+                console.log('The new tweet:', tweet);
+                dispatch({
+                    type: 'create-tweet',
+                    tweet
+                });
+            }
         );
 
 export const deleteTweet = (dispatch, tweet) =>
@@ -56,7 +60,3 @@ export const likeTweet = (dispatch, tweet) =>
             return response.json();
         })
         .then(resolvedResponse => console.log('This is response of likeTweet:', resolvedResponse));
-
-export default {
-    fetchAllTweets, postNewTweet, deleteTweet, likeTweet
-};

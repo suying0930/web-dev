@@ -10,7 +10,6 @@ const tweets = (state = initialState, action) => {
             return({
                 tweets: action.tweets
             })
-            break;
         case 'like-tweet':
             return ({
                 tweets: state.tweets.map(tweet => {
@@ -32,7 +31,6 @@ const tweets = (state = initialState, action) => {
             return ({
                 tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)
             })
-            break;
         case 'create-tweet':
             const newTweet = {
                 _id: (new Date()).getTime() + '',
@@ -42,8 +40,8 @@ const tweets = (state = initialState, action) => {
                 verified: false,
                 handle: "ReactJS",
                 time: "2h",
-                avatarImage: "../../../images/react-blue.png",
-                logoImage: "../../../images/react-blue.png",
+                'avatar-image': "/images/react-blue.png",
+                'logo-image': "/images/react-blue.png",
                 liked: false,
                 stats: {
                     comments: 123,
@@ -58,7 +56,6 @@ const tweets = (state = initialState, action) => {
                     ...state.tweets,
                 ]
             });
-            break;
         default:
             return(state);
     }

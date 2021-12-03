@@ -41,10 +41,10 @@ const ProfileElement = (
             </div>
 
             <div>
-                <img height="200px" width="100%" src={profile.bannerPicture}/>
+                <img height="200px" width="100%" src={profile.bannerPicture} alt={`${profile.name}-bannerPic`}/>
                 <div className="row">
                     <div className="col-9">
-                        <img src={profile.profilePicture} className="wd-profile-picture rounded-circle"/>
+                        <img src={profile.profilePicture} className="wd-profile-picture rounded-circle" alt={`${profile.name}-profilePic`}/>
                     </div>
                     <div className="col-3">
                         <Link to={'/a7/twitter/edit-profile'}

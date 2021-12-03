@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet, fetchAllTweets} from "../../../../services/tweetService";
+import {postNewTweet} from "../../../../services/tweetService";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');

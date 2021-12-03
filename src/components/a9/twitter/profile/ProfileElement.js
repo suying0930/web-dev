@@ -2,14 +2,25 @@ import React, {useEffect} from "react";
 import "./profile.css"
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {getCurrentProfile} from "../../../../services/profileService";
+// import {getCurrentProfile} from "../../../../services/profileService";
+import profileService from "../../../../services/profileService";
 
 const ProfileElement = () => {
     const profile = useSelector(state => state.profile);
     const dispatch = useDispatch();
-    useEffect(() => getCurrentProfile(dispatch));
+    // useEffect(() => getCurrentProfile(dispatch));
+    useEffect(() => profileService.getCurrentProfile(dispatch), []);
+    // useEffect(() =>
+    //     profileService.getCurrentProfile()
+    //         .then(profile => {
+    //             console.log('getCurrentProfile:', profile);
+    //             dispatch({
+    //                 type: 'GET-CURRENT-PROFILE',
+    //                 payload: profile,
+    //             });
+    //         }), []);
 
-    return(
+    return (
         <div>
             <div className="row">
                 <div className="col-2 wd-profile-shift">
@@ -36,7 +47,7 @@ const ProfileElement = () => {
                     </div>
                     <div className="col-3">
                         <Link to={'/a9/twitter/edit-profile'}
-                           className="btn btn-outline-primary btn-block rounded-pill float-end wd-edit-profile-color">
+                              className="btn btn-outline-primary btn-block rounded-pill float-end wd-edit-profile-color">
                             Edit profile
                         </Link>
                     </div>

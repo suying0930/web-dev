@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet, fetchAllTweets} from "../../../../services/tweetService";
+import {postNewTweet} from "../../../../services/tweetService";
 
 const WhatsHappening = () => {
     const [whatsHappening, setWhatsHappening] = useState('');
@@ -17,8 +17,8 @@ const WhatsHappening = () => {
             verified: false,
             handle: "ReactJS",
             time: "2h",
-            avatarImage: "../../../images/react-blue.png",
-            logoImage: "../../../images/react-blue.png",
+            'avatar-image': "/images/react-blue.png",
+            'logo-image': "/images/react-blue.png",
             liked: false,
             stats: {
                 comments: 123,

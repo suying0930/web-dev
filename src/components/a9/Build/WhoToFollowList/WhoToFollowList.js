@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import {useDispatch, useSelector} from "react-redux";
 import whoService from "../../../../services/whoService";
@@ -23,8 +23,8 @@ const WhoToFollowList = () => {
                     Who to Follow
                 </li>
                 {
-                    whoList.map(whoItem => {
-                        return(<WhoToFollowListItem who={whoItem}/>);
+                    whoList.map((whoItem, idx) => {
+                        return(<WhoToFollowListItem key={idx} who={whoItem}/>);
                     })
                 }
             </ul>
